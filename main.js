@@ -29,19 +29,19 @@ function calcular() {
 
 	if(imc < 16) {
     	resultado.innerHTML = 'Seu IMC é ' + imc + ' , sendo classificado como: Magreza grau III.'
-    } else if(imc >= 16 && imc < 17) {
+    	} else if(imc >= 16 && imc < 17) {
            resultado.innerHTML = 'Seu IMC é ' + imc + ' , sendo classificado como: Magreza grau II.'
-    } else if(imc >= 17 && imc < 18.50){
+    	} else if(imc >= 17 && imc < 18.50){
             resultado.innerHTML = 'Seu IMC é ' + imc + ' , sendo classificado como: Magreza grau I.'
-    } else if(imc >= 18.50 && imc < 25){
+    	} else if(imc >= 18.50 && imc < 25){
             resultado.innerHTML = 'Seu IMC é ' + imc + ' , sendo classificado como: Peso adequado.'
-    } else if(imc >= 25 && imc < 30) {
+   	} else if(imc >= 25 && imc < 30) {
             resultado.innerHTML = 'Seu IMC é ' + imc + ' , sendo classificado como: Sobrepeso.'
-    } else if(imc >= 30 && imc < 35) {
+    	} else if(imc >= 30 && imc < 35) {
             resultado.innerHTML = 'Seu IMC é ' + imc + ' , sendo classificado como: Obesidade grau I.'
-    } else if(imc >= 35 && imc < 40) {
+    	} else if(imc >= 35 && imc < 40) {
             resultado.innerHTML = 'Seu IMC é ' + imc + ' , sendo classificado como: Obesidade grau II.'
-    } else {
+    	} else {
             resultado.innerHTML = 'Seu IMC é ' + imc + ' , sendo classificado como: Obesidade grau III.'
    	}
 }
