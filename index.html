@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+    <style>
+        body {
+            background-color: #FFFFF0;
+        }
+    </style>
+
+    <title>Calculadora de IMC</title>
+</head>
+
+<body>
+    <main class="container">
+        <div class="mb-5">
+            <h1 class="display-4 text-center fw-bold p-5">Calculadora do Índice de Massa Corporal (IMC)</h1>
+            <p>O <strong>Índice de Massa Corporal (IMC)</strong> é calculado dividindo-se o peso pela altura elevada ao
+                quadrado. Em adultos, o diagnóstico de obesidade baseia-se no IMC.</p>
+        </div>
+        <div class="d-flex justify-content-center mb-5">
+            <form class="border border-dark rounded bg-light p-5">
+                <div class="form-group mb-4">
+                    <label for="peso">Peso em quilos</label>
+                    <input id="peso" type="number" placeholder="Peso (kg)" class="form-control border border-dark">
+                </div>
+                <div class="form-group mb-4">
+                    <label for="altura">Altura em centímetros</label>
+                    <input id="altura" type="number" placeholder="Altura (cm)" class="form-control border border-dark">
+                </div>
+                <div class="mb-2">
+                    <button onclick="calcular()" type="button" class="btn btn-lg w-100 btn-success ">Calcular</button>
+                </div>
+                <div>
+                    <button onclick="limpar()" type="button" class="btn btn-lg w-100 btn-success">Limpar</button>
+                </div>
+            </form>
+        </div>
+        <span id="resultado" class="fw-bold display-6"></span>
+        <div class="my-5">
+            <h3 class="mb-4">Classificação do IMC segundo a OMS:</h3>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Classificação</th>
+                        <th>IMC</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Magreza grau III</td>
+                        <td>
+                            < 16 </td>
+                    </tr>
+                    <tr>
+                        <td>Magreza grau II</td>
+                        <td>16 - 16,99</td>
+                    </tr>
+                    <tr>
+                        <td>Magreza grau I</td>
+                        <td>17 - 18,49</td>
+                    </tr>
+                    <tr>
+                        <td>Eutrofia (peso adequado)</td>
+                        <td>18,50 - 24,99</td>
+                    </tr>
+                    <tr>
+                        <td>Sobrepeso</td>
+                        <td>25 - 29,99</td>
+                    </tr>
+                    <tr>
+                        <td>Obesidade grau I</td>
+                        <td>30 - 34,99</td>
+                    </tr>
+                    <tr>
+                        <td>Obesidade grau II</td>
+                        <td>35 - 39,99</td>
+                    </tr>
+                    <tr>
+                        <td>Obesidade grau III</td>
+                        <td> ≥ 40</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer class="container pb-3">
+        <div class="row justify-content-between align-items-center">
+            <div class="col">
+                <small>Página criada por Isabela Schurhaus Hyeda Buitoni</small>
+            </div>
+            <div class="col-1 px-5">
+                <a onclick="abrirPagina()">
+                    <i class="bi bi-linkedin h2 text-dark"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous">
+    </script>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
